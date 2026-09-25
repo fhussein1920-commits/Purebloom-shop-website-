@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pure Bloom | Organic Treasures for Body & Soul</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #0d0d0b;
+      color: #f7f1df;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3 {
+      font-family: Georgia, serif;
+      font-weight: normal;
+    }
+
+    .gold {
+      color: #d8b65a;
+    }
+
+    /* NAVIGATION */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(10,10,8,0.96);
+      border-bottom: 1px solid #7c672f;
+      padding: 15px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      color: #d8b65a;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: #f7f1df;
+      text-decoration: none;
+      margin-left: 14px;
+      font-size: 14px;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 70px 20px;
+      background:
+        radial-gradient(circle at top, #29220f 0%, #11110d 42%, #080808 100%);
+    }
+
+    .logo-placeholder {
+      width: 170px;
+      height: 170px;
+      border: 1px solid #d8b65a;
+      border-radius: 50%;
+      margin: 0 auto 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #d8b65a;
+      font-family: Georgia, serif;
+      font-size: 48px;
+      letter-spacing: 4px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      letter-spacing: 6px;
+      color: #d8b65a;
+      margin-bottom: 10px;
+    }
+
+    .tagline {
+      color: #e8d39b;
+      font-size: 19px;
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto 30px;
+      color: #ddd5c4;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 25px;
+      margin: 6px;
+      border: 1px solid #d8b65a;
+      color: #111;
+      background: #d8b65a;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+
+    .button-outline {
+      background: transparent;
+      color: #d8b65a;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 70px 7%;
+    }
+
+    .section-title {
+      text-align: center;
+      color: #d8b65a;
+      font-size: 36px;
+      margin-bottom: 12px;
+    }
+
+    .section-intro {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 40px;
+      color: #cfc8b8;
+    }
+
+    /* SHOP */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .product {
+      border: 1px solid #5f512b;
+      background: #161612;
+      border-radius: 14px;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .product-icon {
+      font-size: 40px;
+      margin-bottom: 12px;
+    }
+
+    .product h3 {
+      color: #d8b65a;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .product p {
+      color: #cfc8b8;
+      font-size: 14px;
+    }
+
+    /* ABOUT */
+    .about {
+      background: #151510;
+      text-align: center;
+    }
+
+    .about-content {
+      max-width: 800px;
+      margin: auto;
+      color: #d8d0bf;
+    }
+
+    /* ORDER */
+    .order {
+      text-align: center;
+      background:
+        radial-gradient(circle, #27200e 0%, #0c0c0a 70%);
+    }
+
+    .order p {
+      max-width: 650px;
+      margin: 15px auto 25px;
+      color: #d8d0bf;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      border-top: 1px solid #5f512b;
+      padding: 35px 20px;
+      color: #aaa28f;
+      background: #080808;
+    }
+
+    footer strong {
+      color: #d8b65a;
+      font-family: Georgia, serif;
+      letter-spacing: 2px;
+    }
+
+    footer a {
+      color: #d8b65a;
+      text-decoration: none;
+    }
+
+    @media(max-width:600px) {
+      .hero h1 {
+        font-size: 37px;
+      }
+
+      .hero {
+        min-height: 75vh;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      nav a {
+        margin: 0 6px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <div class="brand">PURE BLOOM</div>
+
+  <div>
+    <a href="#home">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#about">About</a>
+    <a href="#order">Order</a>
+  </div>
+</nav>
+
+
+<header class="hero" id="home">
+
+  <div>
+
+    <div class="logo-placeholder">
+      PB
+    </div>
+
+    <h1>PURE BLOOM</h1>
+
+    <div class="tagline">
+      Organic Treasures for Body &amp; Soul
+    </div>
+
+    <p>
+      Discover a beautiful collection of natural and organic-inspired
+      skincare, body care, bath products, herbal teas, candles,
+      fragrances and thoughtful gifts.
+    </p>
+
+    <a class="button" href="#shop">
+      Shop Our Collection
+    </a>
+
+    <a class="button button-outline"
+       href="https://wa.me/447746638526"
+       target="_blank">
+       Order on WhatsApp
+    </a>
+
+  </div>
+
+</header>
+
+
+<section id="shop">
+
+  <h2 class="section-title">
+    Shop Our Collection
+  </h2>
+
+  <p class="section-intro">
+    Thoughtfully selected products designed to bring a little
+    nourishment, relaxation and luxury into your everyday routine.
+  </p>
+
+  <div class="products">
+
+    <div class="product">
+      <div class="product-icon">🧼</div>
+      <h3>Organic Soaps</h3>
+      <p>
+        Explore our beautiful range of scented and unscented soaps.
+      </p>
+    </div>
+
+    <div class="product">
+      <div class="product-icon">🌿</div>
+      <h3>Skincare</h3>
+      <p>
+        Creams, serums, balms and oils for your everyday self-care routine.
+      </p>
+    </div>
+
+    <div class="product">
+      <div class="product-icon">🕯️</div>
+      <h3>Candles</h3>
+      <p>
+        Beautifully scented soy and beeswax candles for peaceful moments.
+      </p>
+    </div>
+
+    <div class="product">
+      <div class="product-icon">🛁</div>
+      <h3>Bath &amp; Body</h3>
+      <p>
+        Bath salts, bath bombs and body-care treats created for relaxation.
+      </p>
+    </div>
+
+    <div class="product">
+      <div class="product-icon">🍵</div>
+      <h3>Herbal Teas</h3>
+      <p>
+        Warming herbal blends and our Pure Bloom holistic tea collection.
+      </p>
+    </div>
+
+    <div class="product">
+      <div class="product-icon">🌸</div>
+      <h3>Oils &amp; Fragrances</h3>
+      <p>
+        Essential oils, botanical oils and beautiful fragrances.
+      </p>
+    </div>
+
+    <div class="product">
+      <div class="product-icon">🎁</div>
+      <h3>Gifts</h3>
+      <p>
+        Thoughtful Pure Bloom gifts for someone special — or simply for you.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="about" id="about">
+
+  <h2 class="section-title">
+    About Pure Bloom
+  </h2>
+
+  <div class="about-content">
+
+    <p>
+      Pure Bloom is inspired by a love of natural beauty,
+      wellness and simple moments of self-care.
+    </p>
+
+    <br>
+
+    <p>
+      Our collection brings together skincare, body care,
+      bath products, candles, herbal teas, fragrances,
+      oils and gifts — carefully selected to help you
+      nourish, relax and bloom.
+    </p>
+
+    <br>
+
+    <p class="gold">
+      Nourish. Relax. Bloom.
+    </p>
+
+  </div>
+
+</section>
+
+
+<section class="order" id="order">
+
+  <h2 class="section-title">
+    Ready to Order?
+  </h2>
+
+  <p>
+    Browse our collection and contact Pure Bloom directly on
+    WhatsApp for product availability, enquiries and orders.
+  </p>
+
+  <a class="button"
+     href="https://wa.me/447746638526"
+     target="_blank">
+     Order on WhatsApp
+  </a>
+
+  <br><br>
+
+  <p>
+    Instagram:
+    <strong class="gold">@purebloom2025</strong>
+  </p>
+
+</section>
+
+
+<footer>
+
+  <strong>PURE BLOOM</strong>
+
+  <p>Organic Treasures for Body &amp; Soul</p>
+
+  <p style="margin-top:10px;">
+    © 2026 Pure Bloom. All rights reserved.
+  </p>
+
+</footer>
+
+</body>
+</html>
