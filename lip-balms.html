@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lip Balms | Pure Bloom</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #050505;
+    color: #f5f1e8;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 35px 20px 25px;
+    border-bottom: 1px solid #8c6a3d;
+}
+
+.brand {
+    font-family: Georgia, serif;
+    color: #c99a52;
+    font-size: 32px;
+    letter-spacing: 4px;
+}
+
+.tagline {
+    color: #c8c2b8;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+main {
+    max-width: 850px;
+    margin: auto;
+    padding: 35px 20px 60px;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    color: #c99a52;
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.intro {
+    text-align: center;
+    color: #c8c2b8;
+    margin-bottom: 35px;
+}
+
+.product-image {
+    width: 100%;
+    max-height: 520px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 35px;
+    border-radius: 8px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.product {
+    border: 1px solid #6f573b;
+    padding: 28px 20px;
+    text-align: center;
+}
+
+.product h2 {
+    font-family: Georgia, serif;
+    color: #c99a52;
+    margin-top: 0;
+}
+
+.product p {
+    color: #c8c2b8;
+    line-height: 1.6;
+}
+
+.price {
+    color: #e1b66e;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.back {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.back a {
+    color: #c99a52;
+    text-decoration: none;
+}
+
+@media (max-width: 650px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="brand">PURE BLOOM</div>
+    <div class="tagline">Organic Treasures for Body &amp; Soul</div>
+</header>
+
+<main>
+
+    <h1>Lip Balms</h1>
+
+    <p class="intro">
+        Nourishing lip care to moisturise, soften and care for your lips.
+    </p>
+
+    <img
+        src="IMG-20260929-WA0009.jpg"
+        alt="Pure Bloom Coco-E and Beetroot Lip Balms"
+        class="product-image"
+    >
+
+    <section class="products">
+
+        <div class="product">
+            <h2>Coco-E Lip Balm</h2>
+            <p>Coconut &amp; Vitamin E lip balm for soft, moisturised lips.</p>
+            <div class="price">30 SAR</div>
+        </div>
+
+        <div class="product">
+            <h2>Beetroot Lip Balm</h2>
+            <p>Nourishing beetroot lip balm for soft and beautifully cared-for lips.</p>
+            <div class="price">30 SAR</div>
+        </div>
+
+    </section>
+
+    <div class="back">
+        <a href="skincare.html">← Back to Skincare &amp; Body</a>
+    </div>
+
+</main>
+
+</body>
+</html>
